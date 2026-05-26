@@ -1,0 +1,147 @@
+.store {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.store-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.store-title {
+  color: #e8e0ff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.store-search {
+  background: #13121f;
+  border: 1px solid rgba(130, 80, 255, 0.2);
+  color: #e8e0ff;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: 240px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.store-search::placeholder { color: #4a4560; }
+.store-search:focus { border-color: #8250ff; }
+
+.store-layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 680px) {
+  .store-layout { grid-template-columns: 1fr; }
+}
+
+.store-sidebar {
+  flex-shrink: 0;
+}
+
+.sidebar-label {
+  color: #4a4560;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.category-btn {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #7a7290;
+  font-size: 0.875rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.category-btn:hover {
+  background: rgba(130, 80, 255, 0.08);
+  color: #c4b0ff;
+}
+
+.category-btn.active {
+  background: rgba(130, 80, 255, 0.15);
+  color: #c4b0ff;
+  font-weight: 600;
+}
+
+.store-main {}
+
+.results-count {
+  color: #4a4560;
+  font-size: 0.78rem;
+  margin: 0 0 1rem;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.skeleton-card {
+  aspect-ratio: 3/4;
+  background: #13121f;
+  border-radius: 8px;
+  animation: shimmer 1.4s infinite;
+  background: linear-gradient(90deg, #13121f 25%, #1a1830 50%, #13121f 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.error-box {
+  background: rgba(255, 80, 80, 0.08);
+  border: 1px solid rgba(255, 80, 80, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #ff9090;
+}
+
+.error-box button {
+  margin-top: 1rem;
+  background: rgba(255, 80, 80, 0.15);
+  border: 1px solid rgba(255, 80, 80, 0.3);
+  color: #ff9090;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty-msg {
+  color: #4a4560;
+  text-align: center;
+  padding: 3rem;
+  font-size: 0.9rem;
+}

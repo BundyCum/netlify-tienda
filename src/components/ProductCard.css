@@ -1,0 +1,118 @@
+.product-card {
+  background: #13121f;
+  border: 1px solid rgba(130, 80, 255, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(130, 80, 255, 0.4);
+}
+
+.card-image-link {
+  display: block;
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.product-card:hover .card-image {
+  transform: scale(1.04);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.card-tag {
+  background: rgba(130, 80, 255, 0.75);
+  color: #e8e0ff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  backdrop-filter: blur(4px);
+}
+
+.card-body {
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.card-title {
+  color: #e8e0ff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.3;
+  transition: color 0.2s;
+}
+
+.card-title:hover {
+  color: #c4b0ff;
+}
+
+.card-description {
+  color: #6b6580;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.card-price {
+  color: #a3ff8f;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+}
+
+.card-btn {
+  background: rgba(130, 80, 255, 0.15);
+  border: 1px solid rgba(130, 80, 255, 0.4);
+  color: #c4b0ff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card-btn:hover:not(:disabled) {
+  background: #8250ff;
+  border-color: #8250ff;
+  color: #fff;
+}
+
+.card-btn.in-cart {
+  background: rgba(163, 255, 143, 0.1);
+  border-color: rgba(163, 255, 143, 0.3);
+  color: #a3ff8f;
+  cursor: default;
+}

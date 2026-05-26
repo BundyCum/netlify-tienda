@@ -1,0 +1,132 @@
+.library-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.library-header {
+  margin-bottom: 2rem;
+}
+
+.library-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lib-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8250ff, #ff6eb4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.library-title {
+  color: #e8e0ff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 2px;
+  letter-spacing: -0.02em;
+}
+
+.library-sub {
+  color: #4a4560;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.library-item {
+  background: #13121f;
+  border: 1px solid rgba(130, 80, 255, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.library-item:hover {
+  border-color: rgba(130, 80, 255, 0.35);
+}
+
+.lib-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+.lib-info {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lib-name {
+  color: #c4b0ff;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.lib-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.play-btn {
+  background: #8250ff;
+  border: none;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.play-btn:hover { background: #9d6fff; }
+
+.lib-detail-link {
+  color: #7a7290;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.lib-detail-link:hover { color: #c4b0ff; }
+
+.library-empty {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #4a4560;
+}
+
+.library-empty p { margin-bottom: 1.5rem; }
+
+.btn-browse {
+  background: #8250ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.btn-browse:hover { background: #9d6fff; }
