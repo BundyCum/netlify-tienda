@@ -38,7 +38,7 @@ export default function Login() {
       <div className="login-card">
         <div className="login-logo">
           <span className="login-icon">◈</span>
-          <span className="login-brand">VAPOUR</span>
+          <span className="login-brand"> TETRUX </span>
         </div>
         <h1 className="login-title">Sign in to your account</h1>
         <p className="login-sub">Enter any username and password to continue</p>

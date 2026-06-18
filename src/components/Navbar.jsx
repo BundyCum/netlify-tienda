@@ -17,7 +17,7 @@ export default function Navbar() {
     <header className="navbar">
       <Link to="/" className="navbar-logo">
         <span className="logo-icon">◈</span>
-        <span className="logo-text">VAPOUR</span>
+        <span className="logo-text">TETRUX</span>
       </Link>
 
       <nav className="navbar-links">

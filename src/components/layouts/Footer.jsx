@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-brand">
           <span className="footer-logo-icon">◈</span>
-          <span className="footer-logo-text">VAPOUR</span>
+          <span className="footer-logo-text">TETRUX</span>
           <p className="footer-tagline">Your digital game store.</p>
         </div>
 
@@ -27,7 +27,7 @@ const Footer = () => {
       <hr className="footer-divider" />
 
       <div className="footer-copyright">
-        <p>© {currentYear} <span className="footer-brand-name">Vapour Store</span>. All rights reserved.</p>
+        <p>© {currentYear} <span className="footer-brand-name">TETRUX Store</span>. All rights reserved.</p>
       </div>
     </footer>
   );

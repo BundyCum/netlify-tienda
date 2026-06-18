@@ -83,7 +83,7 @@ export default function ProductDetail() {
           <div className="detail-meta">
             <div className="meta-row">
               <span className="meta-label">Developer</span>
-              <span className="meta-value">Vapour Studios</span>
+              <span className="meta-value">TETRUX Studios</span>
             </div>
             <div className="meta-row">
               <span className="meta-label">Platform</span>
