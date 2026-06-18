@@ -35,7 +35,7 @@ export default function Home() {
           <div className="hero-visual">
             <div className="hero-glow" />
             <img
-              src="img/Tetrux_foto.png"
+              src="./img/Tetrux_foto.png"
               alt="Featured game"
               className="hero-img"
             />
