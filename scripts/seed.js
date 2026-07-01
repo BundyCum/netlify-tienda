@@ -2,13 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, push } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD7MRYM4uY4qtKnbXBvgV-uoyawUmG8VBI",
-  authDomain: "tetrux-cbf61.firebaseapp.com",
-  projectId: "ttetrux-cbf61",
-  databaseURL: "https://ttetrux-cbf61-default-rtdb.firebaseio.com",
-  appId: "1:336793183575:web:8ebcc721c12f6c6e170a12",
+  apiKey: process.env.VITE_FIREBASE_API_KEY,
+  authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.VITE_FIREBASE_APP_ID,
+  databaseURL: process.env.VITE_FIREBASE_DATABASE_URL,
 };
-
 const products = [
   {
     name: "Elden Ring",
