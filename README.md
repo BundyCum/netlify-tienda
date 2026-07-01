@@ -97,7 +97,3 @@ El proyecto ya tiene el `netlify.toml` configurado, así que solo necesitás:
 4. Deploy
 
 Build command: `npm run build` — Publish directory: `dist`
-
----
-
-## Estructura
