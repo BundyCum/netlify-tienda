@@ -72,7 +72,7 @@ export default function Home() {
             </Col>
             <Col xs={12} md={6}>
               <GlowWrap>
-                <HeroImg src="/img/Tetrux_foto.png" alt="TETRUX store" />
+                <HeroImg src="/Tetrux_foto.png" alt="TETRUX store" />
               </GlowWrap>
             </Col>
           </Row>
